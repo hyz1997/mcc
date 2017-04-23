@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>管理页面</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body{
+          padding-top: 70px;
+          padding-bottom: 50px;
+        }
+        .pl15 {
+          padding-left: 15px;
+
+        }
+        .brand-position {
+          position: relative;
+          top: -10px;
+          margin-right: 20px;
+        }
+        .sidebar {
+          position: fixed;
+          background-color: #ddd;
+          top: 51px;
+          bottom: 0;
+          padding-top: 30px;
+        }
+        .nav-sidebar {
+            margin-right: -15px;
+            margin-bottom: 20px;
+            margin-left: -15px;
+        }
+        .main {
+          position: relative;
+          left: 240px;
+        }
+        .ml200 {
+          margin-left: 700px;
+        }
+        .img-rounded {
+          width: 60px;
+          height: 60px;
+
+        }
+    </style>
+</head>  
+<body>
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">首页</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand brand-position" href="#"><img src="img/logo.png"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav pl15">
+                <li class="active"><a href="##">首页</a></li>
+                <li><a href="##">客服管理</a></li>
+                <li class="dropdown">
+                    <a href="##" data-toggle="dropdown" class="dropdown-toggle">员工管理<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="##">CSS3</a></li>
+                        <li><a href="##">JavaScript</a></li>
+                        <li><a href="##">PHP</a></li>
+                    </ul>
+                </li>
+                <li><a href="##">帮助</a></li>
+                <li><a href="##">关于我们</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="info.html">信息查询</a></li>
+            <li><a href="#">信息建立</a></li>
+            <li><a href="#">信息管理</a></li>
+
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="#">设置</a></li>
+            <li><a href="#">帮助</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offest-3 col-md-10 col-md-offest-2 main">
+          <h1 class="page-header">中冶赛德控制台<span class="ml200"><img src="img/touxiang.jpg" class="img-rounded"></span></h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">最新提醒</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="alert alert-success" role="alert">
+                    <strong>提示</strong>你的订单（12341）已审批通过！
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    <strong>提示</strong>你的订单(23451)被打回！
+                  </div>
+                  <div class="alert alert-warning" role="alert">
+                    <strong>提示</strong>你的订单（12343
+                    )客户延期付款！
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">我的任务</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="alert alert-info" role="alert">
+                    <span class="badge pull-right">21</span>订单审核
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    <span class="badge pull-right">11</span>收款确认
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    <span class="badge pull-right">28</span>支付确认
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">最新订单</h3>
+                </div>
+                <div class="panel-body">
+                  <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>产品</th>
+                                            <th>数量</th>
+                                            <th>总金额</th>
+                                            <th>业务员</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Apple Macbook air</td>
+                                            <td>10</td>
+                                            <td>80000</td>
+                                            <td>?С??</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Apple iPad air</td>
+                                            <td>20</td>
+                                            <td>65000</td>
+                                            <td>?????</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Apple Macbook pro</td>
+                                            <td>5</td>
+                                            <td>50000</td>
+                                            <td>???ϸ?</td>
+                                        </tr>
+                                    </tbody>
+                  </table>
+                  <p><a class="btn btn-primary" href="#" role="button">查看更多</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">工程进度</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                        <span class="sr-only">80% Complete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

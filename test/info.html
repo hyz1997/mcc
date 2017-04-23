@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>管理页面</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-paginator.js"></script>
+    <script type="text/javascript" src="js/info.js"></script>
+    <style type="text/css">
+        body{
+          padding-top: 70px;
+          padding-bottom: 50px;
+          overflow-x: hidden;
+
+        }
+        li {
+          list-style-type: none;
+        }
+        .pl15 {
+          padding-left: 15px;
+
+        }
+        .brand-position {
+          position: relative;
+          top: -10px;
+          margin-right: 20px;
+        }
+        .sidebar {
+          position: fixed;
+          background-color: #ddd;
+          top: 51px;
+          bottom: 0;
+          padding-top: 30px;
+        }
+        .nav-sidebar {
+            margin-right: -15px;
+            margin-bottom: 20px;
+            margin-left: -15px;
+        }
+        .main {
+          position: relative;
+          left: 240px;
+        }
+        .ml200 {
+          margin-left: 700px;
+        }
+        .img-rounded {
+          width: 60px;
+          height: 60px;
+
+        }
+        .table-scroll {
+          overflow: auto;
+        }
+        /* 分页 */
+        .page {
+          width: 82%;
+          margin-left: 345px;
+          margin-top: 10px;
+        }
+        .PageUl {
+          width: 50%;
+          margin-left: 30%
+        }
+        .BORDER{
+          border: 1px solid #cad6ce;
+          padding:2px 10px;
+          color:#a9bdb1;
+          cursor:pointer;
+        }
+        .page li {
+          float: left;
+          font-size: 18px;
+          color: #a9bdb1;
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-right: 20px;
+        }
+        .curPage{
+          color:white;
+          background:#fee974;
+          border:1px #fee974 solid;
+          padding:2px 10px;
+          float:left;
+          text-align:center;
+          cursor:pointer;
+        }
+        .disbled{
+          color:#CCCCCC;
+          border:1px #CCCCCC solid;
+          padding:2px 10px;
+          float:left;
+          text-align:center;
+          cursor:not-allowed;
+        }
+    </style>
+</head>  
+<body>
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">首页</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand brand-position" href="#"><img src="img/logo.png"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav pl15">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="##">客服管理</a></li>
+                <li class="dropdown">
+                    <a href="##" data-toggle="dropdown" class="dropdown-toggle">员工管理<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="##">CSS3</a></li>
+                        <li><a href="##">JavaScript</a></li>
+                        <li><a href="##">PHP</a></li>
+                    </ul>
+                </li>
+                <li><a href="##">帮助</a></li>
+                <li><a href="##">关于我们</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="#">信息查询</a></li>
+            <li><a href="#">信息建立</a></li>
+            <li><a href="#">信息管理</a></li>
+
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="#">设置</a></li>
+            <li><a href="#">帮助</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offest-3 col-md-10 col-md-offest-2 main">
+          <h1 class="page-header">中冶赛德控制台<span class="ml200"><img src="img/touxiang.jpg" class="img-rounded"></span></h1>
+          <div class="table-responsive table-scroll">
+           <table class="table table-bordered table-scroll" id="#table1">
+             <thead>
+               <tr style="background:#000;color:#fff">
+                 <th>target1</th>
+                 <th>target2</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+             </tbody>
+           </table>
+           <table class="table table-bordered table-scroll" id="#table2" style="display:none">
+             <thead>
+               <tr style="background:#000;color:#fff">
+                 <th>target1</th>
+                 <th>target2</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+             </tbody>
+           </table>
+           <table class="table table-bordered table-scroll" id="#table3" style="display:none">
+             <thead>
+               <tr style="background:#000;color:#fff">
+                 <th>target1</th>
+                 <th>target2</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+             </tbody>
+           </table>
+           <table class="table table-bordered table-scroll" id="#table4" style="display:none">
+             <thead>
+               <tr style="background:#000;color:#fff">
+                 <th>target1</th>
+                 <th>target2</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+             </tbody>
+           </table>
+           <table class="table table-bordered table-scroll" id="#table5" style="display:none">
+             <thead>
+               <tr style="background:#000;color:#fff">
+                 <th>target1</th>
+                 <th>target2</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>
+                 
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+               <tr>
+                 <td>bad</td>
+                 <td>bad</td>               
+               </tr>
+             </tbody>
+           </table>
+          </div>
+          <div class="container">
+            <!-- <ul class="pagination">
+              <li><a href="#">&laquo;第一页</a></li>
+              <li><a href="#">11</a></li>
+              <li><a href="#">12</a></li>
+              <li class="active"><a href="#">13</a></li>
+              <li><a href="#">14</a></li>
+              <li><a href="#">15</a></li>
+              <li class="disabled"><a href="#">最后一页&raquo;</a></li>
+            </ul>   -->
+            <div class="page clearfix" id="clipDIV" >
+                </div> 
+          </div>
+           
+       </div>
+      </div>
+    </div>
+</body>
+</html>
